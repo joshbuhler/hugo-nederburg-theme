@@ -155,5 +155,6 @@ figcaption styles
 }
 figcaption p {
     margin: auto; /* override style in theme */
+    text-align: center;
 }
 
