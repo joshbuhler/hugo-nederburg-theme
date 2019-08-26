@@ -41,7 +41,7 @@
 						<span class="date">{{ .Date.Format .Site.Params.DateForm }}</span>
 
 
-
+<!--
 							{{ if and (isset .Site.Params "authorlink") .Site.Params.authorLink }}
 								{{ if and (isset .Site.Params "author") .Site.Params.author }}
 								<span> / </span>
@@ -54,7 +54,7 @@
 							{{ .Params.writer | default .Site.Params.author }}
 							</span>
 							{{ end }}
-
+-->
 
 						 {{ range .Params.categories }}
 							<span> / </span>
@@ -70,7 +70,9 @@
 							</div>
 							<div class='excerpt-content'>
 								<article>
-									{{ .Summary }}
+									<!--{{ .Summary }}-->
+
+									{{ .Params.preview }}
 
 									<div class="more-link-wrapper"><a class="more-link" href="{{ .Permalink }}">Read the post<span class="screen-reader-text">This is a Standard Post</span></a></div>
 								</article>
