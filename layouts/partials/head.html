@@ -9,6 +9,7 @@
 {{ else }}<meta name="description" content="{{ .Site.Params.description }}" />
 {{ end }}
 
+{{ if .GitInfo }}<meta name="commit" content="{{ .GitInfo.AbbreviatedHash }}" /> {{ end }}
 
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="robots" content="all,follow">
